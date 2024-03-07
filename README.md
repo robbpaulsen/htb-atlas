@@ -1,6 +1,6 @@
 # HTB-Atlas
 
-Es un proyecto parte del curso de "Introduccion a Linux" de la academia ![Hack4u](https://hack4u.io) de Savit4r. En este curso se da una detallada introduccion a los comandos basicos y especial atencion a las utilidades centrales o "core" con las cuales vienen ya includias en la mayoria ded las distribuciones Linux.
+Es un proyecto parte del curso de "Introduccion a Linux" de la academia [Hack4u](https://hack4u.io) de Savit4r. En este curso se da una detallada introduccion a los comandos basicos y especial atencion a las utilidades centrales o "core" con las cuales vienen ya includias en la mayoria ded las distribuciones Linux.
 
 El objetivo de este proyecto es familiarizarse con la terminal, el uso de "loops" `for` y `while`, uso de `if` statements, el uso de princiante a nivel medio con el editor de texto "Neovim" (Aclaro que esto totalmente depende del interesado, sin practica no se puede hacer nada al respecto).
 
