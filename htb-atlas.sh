@@ -71,15 +71,16 @@ function searchMachine() {
 }
 
 function updateFiles() {
-	if [[ ! -f bundle.js ]]; then
+	if [ ! -f bundle.js ]; then
 		echo -e "\n${yc}[+]${ec}${grayc} No existe la base de datos, empieza la descarga ....${ec}\n"
 		curl -s "$mainUrl" >bundle.js
 		js-beautify bundle.js |
 			sponge bundle.js
 		echo -e "\n${gc}[+]${ec}${grayc} Todos los archivos se han descargad${ec}\n"
 	else
-		curl -s "$mainUrl" >temp.js
-		js-beautify temp.js | sponge temp.js
+		curl -s "$mainUrl" >temp.js &&
+			js-beautify temp.js | sponge temp.js
+
 		evalb="$(md5sum bundle.js | awk '{ print $1 }')"
 		evalt="$(md5sum temp.js | awk '{ print $1 }')"
 
